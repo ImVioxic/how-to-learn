@@ -1,0 +1,407 @@
+.page {
+  min-width: 1100px;
+  max-width: 1600px;
+  margin:0 auto;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+h1,h2,h3,h4,p,a,title{
+  margin:0;
+  padding:0;
+}
+
+.logo {
+  width: 183px;
+  height: 32px;
+  position: absolute;
+}
+
+/* header */
+
+.header {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  display:flex;
+}
+.header__background {
+  width: 100%;
+  height: 100vh;
+  position:absolute;
+  content:'';
+  background-color: #f2f2f2;
+}
+.logo_place_header {
+  top: 30px;
+  left: 64px;
+  z-index: 100;
+}
+
+.header__title {
+  width: 730px;
+  display:block;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+  color: black;
+  margin:auto 64px;
+  z-index: 102;
+}
+.header__subtitle {
+  width: 388px;
+  position:absolute;
+  bottom: 30px;
+  left: 64px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight:normal;
+  z-index: 101;
+}
+.header__subtitle-link {
+  text-decoration:none;
+  color: #2f80ed;
+}
+
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  position:absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  object-fit:cover;
+}
+
+.header__square-pic {
+  width: 568px;
+  height: 568px;
+  background: #2f80ed;
+  position:absolute;
+  right: 0;
+  top: 64px;
+}
+
+/* description */
+
+.description{
+  margin-top:100px;
+  margin-bottom:100px;
+}
+
+.two-columns__span-accent {
+  font-weight:bold;
+  font-size: 24px;
+  line-height: 34px;
+}
+.two-columns {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  margin-top: 0;
+  width: 80%;
+  position:relative;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.description p {
+  margin-top: 0;
+}
+
+.two-columns__brief {
+  flex-basis: 175px;
+  color: #2F80ED;
+  line-height: 1.2;
+  font-size: 18px;
+}
+
+.two-columns__main-text {
+  flex-basis: 80%;
+  min-width: 784px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+
+.two-columns__paragraph{
+  font-size: 24px;
+  line-height: 34px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Digits */
+
+.digits{
+  margin-top:100px;
+  margin-bottom:100px;
+  position:relative;
+}
+
+.section-title {
+  padding-top:90px;
+  margin-bottom:20px;
+  width: 60%;
+  line-height: 69px;
+  font-size: 60px;
+  font-weight:bold;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
+
+.section-subtitle {
+  width: 60%;
+  line-height: 34px;
+  font-size: 24px;
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.table {
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  position:relative;
+  margin-left:auto;
+  margin-right:auto;
+  width: 1100px;
+  justify-content:space-between;
+}
+
+.digits__table {
+   margin-top:0; /* так как у ячеек 60px выставлено  */
+}
+
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight:bold;
+  margin-bottom: 20px;
+  margin-top:0;
+}
+
+.table__text {
+  margin-top: 20px;
+  line-height: 1.2;
+  font-size: 18px;
+}
+
+.table__cell {
+  width: 250px;
+  min-height: 5px;
+  margin-top: 60px;
+}
+
+/* feynman */
+
+.feynman {
+  padding-top: 80px;
+  background-color: #F2F2F2;
+  height: 790px;
+  background-image: url(../images/feynman.png);
+  background-position:left bottom;
+  background-repeat:no-repeat;
+  background-size: 867px 637px;
+  position:relative;
+}
+
+.feynman__title {
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight:bold;
+  width: 648px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 70px;
+  text-align:center;
+}
+
+.feynman__subtitle {
+  line-height: 51px;
+  font-size: 36px;
+  margin:0  auto;
+  text-align:center;
+}
+
+.feynman__link {
+  position:absolute;
+  top: 50%;
+  line-height: 51px;
+  font-size: 36px;
+  right: 48px;
+  color:#2f80ed;
+  text-decoration:none;
+}
+
+
+/* Кауфман */
+
+
+.section__title {
+  margin:0 auto;
+  text-align:center;
+  width: 60%;
+  font-size: 60px;
+  line-height: 1.15;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.section__subtitle {
+  margin:0 auto;
+  text-align:center;
+  width: 60%;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.table {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  width: 1100px;
+  flex-wrap:wrap;
+}
+
+.table__cell {
+  width: 250px;
+  margin: 60px 0 0;
+}
+
+.table__heading {
+  font-size: 25px;
+  line-height: 1.15;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+
+.table__text {
+  font-size: 18px;
+  line-height: 1.12;
+  margin-bottom: 20px;
+}
+
+.kaufman {
+  margin: 0;
+  padding: 0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  background-color: #1f1f1f;
+  overflow:hidden;
+  position:relative;
+}
+
+.kaufman__triangle {
+  width: 877px;
+  height: 877px;
+  position:absolute;
+  right: -210px;
+  top: 0;
+  z-index: 0;
+}
+
+.table_theme_dark {
+  color:#ffffff;
+  z-index: 1;
+}
+
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+}
+
+.table__heading_theme_dark, .table__text_theme_dark, .section-subtitle_theme_dark, .section-title_theme_dark {
+  color:#ffffff;
+}
+
+/* Блок */
+
+.content__black {
+  width: 100%;
+  height: 150px;
+  background-color: #1f1f1f;
+}
+
+/* Подвал */
+
+.footer {
+  display:flex;
+  position:relative;
+  justify-content:center;
+  background-color: #1f1f1f;
+  color: #f2f2f2;
+  min-height: 350px;
+}
+
+.footer__columns {
+  width: 90%;
+  margin: 60px auto 40px;
+  display:flex;
+  justify-content:space-between;
+}
+
+.footer__column_content_copyright {
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  flex-basis: 711px;
+}
+
+.logo_place_footer {
+  width: 183px;
+  height: 35px;
+}
+
+.footer__author {
+  margin: 18px 0 18px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight:normal;
+  padding: 0;
+}
+
+.footer__column_content_info {
+  flex-direction:column;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight:bold;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__column-links {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight:normal;
+  margin: 20px 0 16px;
+  padding: 0;
+  list-style-type:none;
+}
+li {
+  display:flex;
+  flex-direction:column;
+}
+
+.footer__column_content_social {
+  flex-direction:column;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__link {
+  text-decoration:none;
+  color: #f2f2f2;
+}
+
+.footer__social-icon {
+  width: 16px;
+  height: 16px;
+  padding-right: 10px;
+}
